@@ -1,0 +1,13 @@
+VAR 
+
+	in1 : BOOL;
+	in2 : BOOL;
+	out1 : BOOL;
+
+	fbCyCo1 : FB_CylinderControl;
+	
+	fbAxCtrlX1 : FB_AxisControl;
+	AxisX1 : T_Axis;
+	
+END_VAR
+

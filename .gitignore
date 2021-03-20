@@ -1,0 +1,6 @@
+﻿Binaries/
+Temp/
+Diagnosis/
+*.set
+*.isopen
+!*.gitkeep
