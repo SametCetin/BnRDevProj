@@ -31,7 +31,7 @@ TYPE
 	END_STRUCT;
 	T_AxisInterfaceOut : 	STRUCT 
 		Enabled : BOOL;
-		Powered	: BOOL;
+		Powered : BOOL;
 		Homed : BOOL;
 		MoveDone : BOOL;
 		AxisError : BOOL;
@@ -73,7 +73,6 @@ TYPE
 	T_Axis : 	STRUCT 
 		Ctrl : T_AxisInterface;
 		Params : T_AxisParams;
-		Ref : McAxisType;
 		ID : UINT;
 		AbsEnc : BOOL;
 		Installed : BOOL;

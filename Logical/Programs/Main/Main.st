@@ -29,13 +29,12 @@ PROGRAM _CYCLIC
 //		Set :=
 		);
 	
-	AxisX1.Ref := ADR(LinkAxis1);
 	fbAxCtrlX1(
 		stAxisInterface := AxisX1.Ctrl,
 		stAxisParams 	:= AxisX1.Params,
-		AxisLink 		:= AxisX1.Ref,
+		AxisLink 		:= Axis1DevLink
 	);
-	LinkAxis1	:= ADR(AxisX1.Ref);
+
 	
 END_PROGRAM
 
