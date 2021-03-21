@@ -3,7 +3,7 @@ FUNCTION_BLOCK FB_AxisControl
 	VAR_IN_OUT
 		stAxisInterface : T_AxisInterface;
 		stAxisParams : T_AxisParams;
-		AxisLink : McAxisType;
+		AxisRef : McAxisType;
 	END_VAR
 	VAR
 		fbMpAxisBasic : MpAxisBasic;

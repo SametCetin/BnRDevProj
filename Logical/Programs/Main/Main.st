@@ -6,6 +6,8 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	ACT_AxisX1;
+	
 	IF in1 THEN
 		out1 := TRUE;
 	ELSIF in2 THEN
@@ -29,11 +31,7 @@ PROGRAM _CYCLIC
 //		Set :=
 		);
 	
-	fbAxCtrlX1(
-		stAxisInterface := AxisX1.Ctrl,
-		stAxisParams 	:= AxisX1.Params,
-		AxisLink 		:= Axis1DevLink
-	);
+
 
 	
 END_PROGRAM
