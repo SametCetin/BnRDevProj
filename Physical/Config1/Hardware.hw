@@ -20,6 +20,7 @@
       <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="DevProj_Config1" />
+    <Parameter ID="Simulation" Value="1" />
   </Module>
   <Module Name="8EI2X2HWD10.xxxx-1" Type="8EI2X2HWD10.xxxx-1" Version="2.3.0.2">
     <Connection Connector="PLK1" TargetModule="5ACCIF01.FPCS-000" TargetConnector="IF1">
