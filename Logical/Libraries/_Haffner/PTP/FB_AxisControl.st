@@ -1,12 +1,9 @@
 
 FUNCTION_BLOCK FB_AxisControl
-
-	
 	
 	tMpAxisBasicParType.Position			:= stAxisInterface.IN.SetPos;
 	tMpAxisBasicParType.Velocity			:= stAxisInterface.IN.SetVelo;
 	tMpAxisBasicParType.Jog.Velocity		:= stAxisInterface.IN.JogVelo;
-	
 	
 	IF stAxisParams.Calibrate THEN
 		tMpAxisBasicParType.Homing.Position	:= stAxisParams.CalibrationPos;
@@ -49,7 +46,7 @@ FUNCTION_BLOCK FB_AxisControl
 (*		LimitLoad		:= ,
 	ReleaseBrake	:= ,
 *)		
-);
+	);
 
 	stAxisInterface.OUT.Enabled		:= fbMpAxisBasic.Active;
 	stAxisInterface.OUT.Error		:= fbMpAxisBasic.Error;

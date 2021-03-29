@@ -25,6 +25,7 @@ ACTION ACT_AxisX1:
 //			END_IF
 		
 		20:
+			AxisX1.Ctrl.IN.JogVelo	:= 100;
 			AxisX1.Ctrl.IN.Power	:= TRUE;
 			IF AxisX1.Ctrl.OUT.Powered THEN
 				stateAxX1			:= stateAxX1 + 10;
@@ -34,8 +35,6 @@ ACTION ACT_AxisX1:
 			;
 		
 	END_CASE
-	
-	
 	
 	
 	
