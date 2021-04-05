@@ -2,6 +2,7 @@
 TYPE
 	T_HmiAxis : 	STRUCT 
 		ActPos : LREAL;
+		Enabled : BOOL;
 	END_STRUCT;
 	T_Hmi : 	STRUCT 
 		StartMachine : BOOL;

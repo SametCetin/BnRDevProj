@@ -20,6 +20,7 @@
       <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="DevProj_Config1" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUa_AuthenticationSecurityPolicy_EnableNone" Value="1" />
     <Parameter ID="OpcUa_AuthenticationSecurityPolicy_EnableBasic128Rsa15" Value="1" />

@@ -6,6 +6,7 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	HMI.StartMachine := HMI.StartMachine;
 	IF count < 200 THEN
 		count := count + 1;
 	ELSE
