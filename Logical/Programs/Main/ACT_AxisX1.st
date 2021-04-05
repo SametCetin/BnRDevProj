@@ -30,18 +30,22 @@ ACTION ACT_AxisX1:
 			IF AxisX1.Ctrl.OUT.Powered THEN
 				stateAxX1			:= stateAxX1 + 10;
 			END_IF
-		
+			
 		30:
 			;
 		
 	END_CASE
 	
+	HMI.AxisX1.ActPos	:= AxisX1.Ref.ActPos;
 	
-	
-	fbAxCtrlX1(
+	fbAxCtrlX1
+	(
 		stAxisInterface := AxisX1.Ctrl,
 		stAxisParams 	:= AxisX1.Params,
-		AxisRef 		:= AxisX1_Ref,
+		AxisLink 		:= AxisX1_Link,
+		AxisRef			:= AxisX1.Ref
 	);
+	
+
 	
 END_ACTION

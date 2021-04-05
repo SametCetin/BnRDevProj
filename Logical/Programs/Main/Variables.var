@@ -4,6 +4,5 @@ VAR
 	out1 : BOOL;
 	fbCyCo1 : FB_CylinderControl;
 	fbAxCtrlX1 : FB_AxisControl;
-	AxisX1 : T_Axis;
 	stateAxX1 : USINT;
 END_VAR

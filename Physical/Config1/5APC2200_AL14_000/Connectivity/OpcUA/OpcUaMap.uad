@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="7" ArVersion="B4.83">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="HMI">
+          <Variable Name="StartMachine" />
+          <Variable Name="AxisX1">
+            <Variable Name="ActPos" />
+          </Variable>
+        </Variable>
+        <Variable Name="count" />
+      </GlobalVariables>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

@@ -1,8 +1,5 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	count : USINT;
+	AxisX1 : T_Axis;
+	HMI : T_Hmi;
 END_VAR

@@ -4,7 +4,7 @@ FUNCTION_BLOCK FB_AxisControl
 	tMpAxisBasicParType.Position			:= stAxisInterface.IN.SetPos;
 	tMpAxisBasicParType.Velocity			:= stAxisInterface.IN.SetVelo;
 	tMpAxisBasicParType.Jog.Velocity		:= stAxisInterface.IN.JogVelo;
-	
+
 	IF stAxisParams.Calibrate THEN
 		tMpAxisBasicParType.Homing.Position	:= stAxisParams.CalibrationPos;
 		tMpAxisBasicParType.Homing.Mode		:= mcHOMING_DIRECT;
@@ -28,25 +28,22 @@ FUNCTION_BLOCK FB_AxisControl
 		stAxisParams.WriteParamDone			:= FALSE;
 	END_IF
 	
-	
 	fbMpAxisBasic(	
-		MpLink			:= ADR(AxisRef),
+		MpLink			:= ADR(AxisLink),
 		Enable			:= stAxisInterface.IN.Enable,
 		ErrorReset		:= stAxisInterface.IN.Reset,	
 		Parameters		:= ADR(tMpAxisBasicParType),
-(*		Update			:=, 
-*)		Power			:=  fbMpAxisBasic.Info.ReadyToPowerOn AND stAxisInterface.IN.Power,
-(*		Home			:= stAxisInterface.IN.Home,	*)
-(*		MoveVelocity	:= ,
-*)		MoveAbsolute	:= stAxisInterface.IN.MoveSetPos, 
-(*		MoveAdditive	:= ,
-		Stop			:= , 
-*)		JogPositive		:= stAxisInterface.IN.JogFw,
+		(*		Update			:=, 	*)		
+		Power			:=  fbMpAxisBasic.Info.ReadyToPowerOn AND stAxisInterface.IN.Power,
+		(*		Home			:= stAxisInterface.IN.Home,	*)
+		(*		MoveVelocity	:= ,	*)		
+		MoveAbsolute	:= stAxisInterface.IN.MoveSetPos, 
+		(*		MoveAdditive	:= , *)
+		(*		Stop			:= , *)		
+		JogPositive		:= stAxisInterface.IN.JogFw,
 		JogNegative		:= stAxisInterface.IN.JogBw,
-(*		LimitLoad		:= ,
-	ReleaseBrake	:= ,
-*)		
-	);
+		(*		LimitLoad		:= ,	ReleaseBrake	:= ,*)		
+		);
 
 	stAxisInterface.OUT.Enabled		:= fbMpAxisBasic.Active;
 	stAxisInterface.OUT.Error		:= fbMpAxisBasic.Error;
@@ -54,5 +51,8 @@ FUNCTION_BLOCK FB_AxisControl
 	stAxisInterface.OUT.Powered		:= fbMpAxisBasic.PowerOn;
 	stAxisInterface.OUT.MoveDone	:= fbMpAxisBasic.MoveDone;
 	stAxisInterface.OUT.Homed		:= fbMpAxisBasic.IsHomed;
-		
+	AxisRef.ActPos					:= fbMpAxisBasic.Position;	
+	
+	
+	
 END_FUNCTION_BLOCK

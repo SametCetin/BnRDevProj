@@ -34,16 +34,8 @@ TYPE
 		Powered : BOOL;
 		Homed : BOOL;
 		MoveDone : BOOL;
-		AxisError : BOOL;
-		AxisErrId : UDINT;
 		DiagMsgError : BOOL;
-		DiagMsgAdsErrId : UINT;
-		DiagMsgSercosErrId : UINT;
 		DiagMessage : STRING[80];
-		DriveError : BOOL;
-		DriveErrId : UDINT;
-		FunctionError : BOOL;
-		FunctionErrId : UDINT;
 		ErrID : DINT;
 		Error : BOOL;
 	END_STRUCT;
@@ -76,5 +68,9 @@ TYPE
 		ID : UINT;
 		AbsEnc : BOOL;
 		Installed : BOOL;
+		Ref : T_AxisRef;
+	END_STRUCT;
+	T_AxisRef : 	STRUCT 
+		ActPos : LREAL;
 	END_STRUCT;
 END_TYPE

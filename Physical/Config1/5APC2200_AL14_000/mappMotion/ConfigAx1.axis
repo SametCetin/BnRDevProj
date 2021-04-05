@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
-  <Element ID="AxisX1_Ref" Type="axis">
+  <Element ID="AxisX1_Link" Type="axis">
     <Property ID="BaseTypeIsReadOnly" Value="0" />
     <Selector ID="BaseType" Value="LinearBounded">
       <Property ID="MeasurementUnit" Value="5066068" />
