@@ -16,6 +16,7 @@ ACTION ACT_AxisX1:
 				AxisX1.Params.WritePositionBias	:= FALSE;
 				stateAxX1						:= stateAxX1 + 10;
 			END_IF
+			
 //			AxisX1.Ctrl.IN.HomePos	:= 100;
 //			AxisX1.Ctrl.IN.Home		:= TRUE;
 //		
@@ -35,9 +36,7 @@ ACTION ACT_AxisX1:
 			;
 		
 	END_CASE
-	
-	HMI.AxisX1.ActPos	:= AxisX1.Ref.ActPos;
-	
+		
 	fbAxCtrlX1
 	(
 		stAxisInterface := AxisX1.Ctrl,
@@ -46,6 +45,17 @@ ACTION ACT_AxisX1:
 		AxisRef			:= AxisX1.Ref
 	);
 	
-
+	
+	HMI.Axis[0].Enabled	:= AxisX1.Ctrl.OUT.Powered;
+	HMI.Axis[0].ActPos	:= AxisX1.Ref.ActPos;
+	
+	AxisX1.Ctrl.IN.Reset	:= HMI.Axis[0].Reset;
+	AxisX1.Ctrl.IN.JogVelo	:= HMI.Axis[0].JogVelo;
+	AxisX1.Ctrl.IN.JogFw	:= HMI.Axis[0].JogPlus;
+	AxisX1.Ctrl.IN.JogBw	:= HMI.Axis[0].JogMinus;
+	
+	AxisX1.Ctrl.IN.MoveSetPos	:= HMI.Axis[0].MoveSetPos;
+	AxisX1.Ctrl.IN.SetVelo		:= HMI.Axis[0].SetVelo;
+	AxisX1.Ctrl.IN.SetPos		:= HMI.Axis[0].SetPos;
 	
 END_ACTION
