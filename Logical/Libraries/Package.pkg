@@ -4,5 +4,9 @@
   <Objects>
     <Object Type="Package">BR_Libraries</Object>
     <Object Type="Package">_Haffner</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] CNC library">MpCnc</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] PLCopen axes group library">McAxGroup</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] Path generator axes group library">McPathGen</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] Program interpreter library">McProgInt</Object>
   </Objects>
 </Package>

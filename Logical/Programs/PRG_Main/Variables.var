@@ -1,0 +1,3 @@
+VAR
+	fbCyCo1 : FB_CylinderControl;
+END_VAR

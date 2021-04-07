@@ -2,7 +2,9 @@
 <?AutomationStudio Version=4.8.2.72?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="Program" Language="IEC">Main</Object>
+    <Object Type="Program" Language="IEC">PRG_Main</Object>
     <Object Type="Program" Language="IEC">Sayici</Object>
+    <Object Type="Program" Language="IEC">PRG_Axes</Object>
+    <Object Type="Program" Language="IEC">PRG_CNC</Object>
   </Objects>
 </Package>

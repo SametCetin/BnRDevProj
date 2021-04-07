@@ -1,5 +1,11 @@
 VAR
-	count : USINT;
 	AxisX1 : T_Axis;
+	AxisZ1 : T_Axis;
+	CncChInfo : MpCnc2AxisInfoType;
+	CncChParams : MpCnc2AxisParType;
+	count : USINT;
+	fbAxCtrlX1 : FB_AxisControl;
+	fbAxCtrlZ1 : FB_AxisControl;
+	fbCncChannel : MpCnc2Axis;
 	HMI : T_Hmi;
 END_VAR

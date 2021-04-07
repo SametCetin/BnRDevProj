@@ -20,7 +20,15 @@
       <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="DevProj_Config1" />
-    <Parameter ID="Simulation" Value="1" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="5ACCIF01.FPCS-000.IF1" />
+    <Parameter ID="TaskClassIdleTime" Value="2000" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
+    <Parameter ID="Cyclic2Duration" Value="10000" />
+    <Parameter ID="Cyclic2Tolerance" Value="10000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="CNC_PrgDir" />
+    <Parameter ID="FileDevicePath1" Value="C:\scUserFiles\" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUa_AuthenticationSecurityPolicy_EnableNone" Value="1" />
     <Parameter ID="OpcUa_AuthenticationSecurityPolicy_EnableBasic128Rsa15" Value="1" />
@@ -79,7 +87,7 @@
     <Parameter ID="Input" Location="DriveConfiguration/Channel[1]/RealAxis/DigitalInputs/Quickstop" Value="Trigger2" />
     <Parameter ID="SimulationModeOnPLC" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="SetValueGeneration" />
     <Parameter ID="SimulationModeOnACOPOS" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="NotUsed" />
-    <Parameter ID="AxisReference" Location="DriveConfiguration/Channel[2]/RealAxis" Value="AxisZ1_Ref" />
+    <Parameter ID="AxisReference" Location="DriveConfiguration/Channel[2]/RealAxis" Value="AxisZ1_Link" />
     <Parameter ID="InputIsReadOnly" Location="DriveConfiguration/Channel[2]/RealAxis/MechanicalElements/Gearbox" Value="0" />
     <Parameter ID="Input" Location="DriveConfiguration/Channel[2]/RealAxis/MechanicalElements/Gearbox" Value="1" />
     <Parameter ID="OutputIsReadOnly" Location="DriveConfiguration/Channel[2]/RealAxis/MechanicalElements/Gearbox" Value="0" />

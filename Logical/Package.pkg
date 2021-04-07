@@ -8,5 +8,6 @@
     <Object Type="Package" Description="Global libraries">Libraries</Object>
     <Object Type="Package">Programs</Object>
     <Object Type="DataObject" Language="Vc" Description="800x480 (WVGA)">Visu800x400</Object>
+    <Object Type="DataObject" Language="Cnc">CncProg</Object>
   </Objects>
 </Package>

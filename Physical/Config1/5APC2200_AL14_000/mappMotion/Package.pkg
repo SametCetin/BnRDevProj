@@ -2,7 +2,10 @@
 <?AutomationStudio Version=4.8.2.72?>
 <Package SubType="mappMotion" PackageType="mappMotion" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">ConfigAx1.axis</Object>
-    <Object Type="File">ConfigAx2.axis</Object>
+    <Object Type="File">Hierarchy.objecthierarchy</Object>
+    <Object Type="File">ConfAxes.axis</Object>
+    <Object Type="File">ConfCnc.axesgroup</Object>
+    <Object Type="File">ConfMech.mechanicalsystem</Object>
+    <Object Type="File">ConfAxFea.axesgroupfeature</Object>
   </Objects>
 </Package>
