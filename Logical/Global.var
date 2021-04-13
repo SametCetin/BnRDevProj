@@ -8,4 +8,7 @@ VAR
 	fbAxCtrlZ1 : FB_AxisControl;
 	fbCncChannel : MpCnc2Axis;
 	HMI : T_Hmi;
+	RParams : ARRAY[0..200] OF LREAL;
+	MFunc : ARRAY[0..100] OF UDINT;
+	M31 : BOOL;
 END_VAR

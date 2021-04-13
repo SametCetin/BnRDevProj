@@ -8,7 +8,7 @@ PROGRAM _CYCLIC
 	
 	CASE stateAxX1 OF
 		0:
-			stateAxX1	:= stateAxX1 + 10;
+			;//stateAxX1	:= stateAxX1 + 10;
 			
 		10:
 			AxisX1.Ctrl.IN.Enable			:= TRUE;
@@ -18,7 +18,7 @@ PROGRAM _CYCLIC
 			AxisZ1.Params.WriteParam		:= FALSE;
 			
 			IF AxisX1.Ctrl.OUT.Enabled AND NOT AxisX1.Params.WriteParamDone
-				AND AxisZ1.Ctrl.OUT.Enabled AND NOT AxisZ1.Params.WriteParamDone THEN
+			AND AxisZ1.Ctrl.OUT.Enabled AND NOT AxisZ1.Params.WriteParamDone THEN
 				stateAxX1					:= stateAxX1 + 10;
 			END_IF
 		

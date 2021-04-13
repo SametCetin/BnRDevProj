@@ -7,8 +7,7 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	
 	CncChParams.ProgramName := 'CncProg.cnc';
-	
-	
+
 	fbCncChannel(
 		MpLink		:= ADR(CncXZ_Link),
 //		Enable	
@@ -48,7 +47,19 @@ PROGRAM _CYCLIC
 	);
 	
 	CncChInfo := fbCncChannel.Info;
-	 
+	
+	fbBRMFunc[31](
+	AxesGroup := fbCncChannel.MpLink,
+(*	Enable	*)
+	MFunction	:= MFunc[31],
+(*	Reset	*)
+(*	Valid
+	Busy
+	Error
+	ErrorID
+	Value	*)
+	);
+	
 END_PROGRAM
 
 PROGRAM _EXIT

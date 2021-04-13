@@ -24,6 +24,22 @@
       <Selector ID="Location" Value="Default">
         <Property ID="FileDevice" Value="CNC_PrgDir" />
       </Selector>
+      <Group ID="ProgramElements">
+        <Group ID="IpVars">
+          <Group ID="VAR[1]">
+            <Property ID="Name" Value="R" />
+            <Selector ID="Type" Value="LREAL" />
+            <Group ID="Advanced">
+              <Group ID="ArrayDimemsions">
+                <Property ID="ArrayDimemsion[1]" Value="256" />
+              </Group>
+              <Selector ID="Synchronization" Value="Ip" />
+              <Selector ID="Constant" Value="No" />
+              <Selector ID="Storage" Value="Global" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
     </Selector>
   </Element>
   <Element ID="Feature_Jogging" Type="axesgroupfeature">

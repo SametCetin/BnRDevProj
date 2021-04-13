@@ -7,5 +7,6 @@
     <Object Type="File">ConfCnc.axesgroup</Object>
     <Object Type="File">ConfMech.mechanicalsystem</Object>
     <Object Type="File">ConfAxFea.axesgroupfeature</Object>
+    <Object Type="File">Config_1.axesgroupfeature</Object>
   </Objects>
 </Package>
