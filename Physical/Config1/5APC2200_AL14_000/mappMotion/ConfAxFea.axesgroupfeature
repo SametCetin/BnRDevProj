@@ -25,17 +25,13 @@
         <Property ID="FileDevice" Value="CNC_PrgDir" />
       </Selector>
       <Group ID="ProgramElements">
-        <Group ID="IpVars">
-          <Group ID="VAR[1]">
-            <Property ID="Name" Value="R" />
-            <Selector ID="Type" Value="LREAL" />
+        <Group ID="PVs">
+          <Group ID="PV[1]">
+            <Property ID="PvName" Value="::RParams[31]" />
             <Group ID="Advanced">
-              <Group ID="ArrayDimemsions">
-                <Property ID="ArrayDimemsion[1]" Value="256" />
-              </Group>
+              <Property ID="Alias" Value="R31" />
               <Selector ID="Synchronization" Value="Ip" />
-              <Selector ID="Constant" Value="No" />
-              <Selector ID="Storage" Value="Global" />
+              <Selector ID="Reference" Value="No" />
             </Group>
           </Group>
         </Group>
@@ -44,5 +40,20 @@
   </Element>
   <Element ID="Feature_Jogging" Type="axesgroupfeature">
     <Selector ID="Type" Value="Jogging" />
+  </Element>
+  <Element ID="Feature_MFunctions" Type="axesgroupfeature">
+    <Selector ID="Type" Value="MFunctions">
+      <Selector ID="ModalDataBehaviour" Value="UseAxesGroupSettings" />
+      <Group ID="MFunction[1]">
+        <Selector ID="IndexType" Value="Single">
+          <Property ID="Index" Value="31" />
+        </Selector>
+        <Selector ID="Blocking" Value="Disabled" />
+        <Selector ID="Output" Value="Before" />
+        <Selector ID="InSimulation" Value="NotUsed" />
+        <Property ID="PvMapping" Value="::M31" />
+        <Property ID="Counter" />
+      </Group>
+    </Selector>
   </Element>
 </Configuration>

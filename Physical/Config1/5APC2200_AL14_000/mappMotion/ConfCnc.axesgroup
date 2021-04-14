@@ -40,6 +40,7 @@
       <Group ID="AxesGroupFeatures">
         <Property ID="FeatureRef[1]" Value="Feature_Programs" />
         <Property ID="FeatureRef[2]" Value="Feature_Jogging" />
+        <Property ID="FeatureRef[3]" Value="Feature_MFunctions" />
       </Group>
     </Selector>
     <Selector ID="Alarms" Value="None" />
