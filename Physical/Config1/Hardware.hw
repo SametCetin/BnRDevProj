@@ -20,6 +20,7 @@
       <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="DevProj_Config1" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="5ACCIF01.FPCS-000.IF1" />
     <Parameter ID="TaskClassIdleTime" Value="2000" />

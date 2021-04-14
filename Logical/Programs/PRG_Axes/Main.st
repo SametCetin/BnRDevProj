@@ -8,7 +8,7 @@ PROGRAM _CYCLIC
 	
 	CASE stateAxX1 OF
 		0:
-			;//stateAxX1	:= stateAxX1 + 10;
+			stateAxX1	:= stateAxX1 + 10;
 			
 		10:
 			AxisX1.Ctrl.IN.Enable			:= TRUE;

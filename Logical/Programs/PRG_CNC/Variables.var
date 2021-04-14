@@ -1,4 +1,4 @@
 VAR
-	abc : BOOL;
+	State : UINT;
 	fbBRMFunc : ARRAY[0..100] OF MC_BR_MFunction;
 END_VAR
