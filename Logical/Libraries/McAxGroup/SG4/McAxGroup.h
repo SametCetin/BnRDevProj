@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* McAxGroup 5.13.2 */
+/* McAxGroup 5.12.3 */
 
 #ifndef _MCAXGROUP_
 #define _MCAXGROUP_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _McAxGroup_VERSION
-#define _McAxGroup_VERSION 5.13.2
+#define _McAxGroup_VERSION 5.12.3
 #endif
 
 #include <bur/plctypes.h>
@@ -154,8 +154,7 @@ typedef enum McAGFModalDatBxEnum
 } McAGFModalDatBxEnum;
 
 typedef struct McAddGroupReadInfoType
-{	plcbit InMotion;
-	plcbit GroupInterrupted;
+{	plcbit GroupInterrupted;
 	plcbit WaitForContinue;
 	enum McGroupPLCopenStateEnum PLCopenState;
 } McAddGroupReadInfoType;

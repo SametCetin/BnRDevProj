@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.8.2.72?>
+<?AutomationStudio Version=4.10.2.37 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
-  <Module Name="5ACCIF01.FPCS-000" Type="5ACCIF01.FPCS-000" Version="1.7.0.0">
+  <Module Name="5ACCIF01.FPCS-000" Type="5ACCIF01.FPCS-000" Version="1.8.1.0">
     <Connection Connector="SL" TargetModule="5APC2200_AL14_000" TargetConnector="SL1" />
+    <Connector Name="IF1">
+      <Parameter ID="DNAConfiguration" Value="manual" />
+    </Connector>
   </Module>
-  <Module Name="5APC2200_AL14_000" Type="5APC2200.AL14-000" Version="1.0.2.0">
+  <Module Name="5APC2200_AL14_000" Type="5APC2200.AL14-000" Version="2.0.1.0">
     <Connector Name="IF3">
       <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
       <Parameter ID="ActivateDevice" Value="1" />
@@ -20,6 +23,7 @@
       <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="DevProj_Config1" />
+    <Parameter ID="UserPartitionSize" Value="0" />
     <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="5ACCIF01.FPCS-000.IF1" />
@@ -38,7 +42,7 @@
     <Parameter ID="OpcUa_SamplingTimer_Default" Value="4" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>
-  <Module Name="8EI2X2HWD10.xxxx-1" Type="8EI2X2HWD10.xxxx-1" Version="2.3.0.2">
+  <Module Name="8EI2X2HWD10.xxxx-1" Type="8EI2X2HWD10.xxxx-1" Version="2.3.1.1">
     <Connection Connector="PLK1" TargetModule="5ACCIF01.FPCS-000" TargetConnector="IF1">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
