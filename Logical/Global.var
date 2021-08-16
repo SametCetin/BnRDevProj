@@ -10,5 +10,6 @@ VAR
 	HMI : T_Hmi;
 	RParams : ARRAY[0..200] OF LREAL := [31(0.0),35,169(0.0)];
 	M31 : BOOL;
+	BRPlcVar2 : LREAL;
 	BRPlcVar1 : UINT;
 END_VAR

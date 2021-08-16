@@ -50,6 +50,8 @@ PROGRAM _CYCLIC
 	AxisZ1.Ctrl.IN.SetPos		:= HMI.Axis[1].SetPos;
 	
 	BRPlcVar1;
+	BRPlcVar2;
+	
 END_PROGRAM
 
 
