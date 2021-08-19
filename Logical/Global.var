@@ -12,4 +12,6 @@ VAR
 	M31 : BOOL;
 	BRPlcVar2 : LREAL;
 	BRPlcVar1 : UINT;
+	Alarm : ARRAY[0..200] OF BOOL;
+	strvar1 : STRING[80];
 END_VAR

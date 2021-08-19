@@ -51,6 +51,8 @@ PROGRAM _CYCLIC
 	
 	BRPlcVar1;
 	BRPlcVar2;
+	Alarm;
+	strvar1;
 	
 END_PROGRAM
 
